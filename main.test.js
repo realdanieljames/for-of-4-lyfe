@@ -4,6 +4,107 @@
 
 
 
+const addAll = function (nums) {
+  let sum = 0;
+  for (num of nums) {
+    sum = sum + num;
+  }
+  return sum;
+}
+
+
+
+//___________________________________________________________________//
+//___________________________________________________________________//
+const countSpaces = function (string) {
+  count = 0
+  for (currentString of string) {
+    if (currentString === ' ') {
+      count = count + 1
+    }
+  }
+  return count
+}
+
+
+
+//___________________________________________________________________//
+//___________________________________________________________________//
+
+const countTrues = function (boolArr) {
+  count = 0
+  for (currentBool of boolArr) {
+    if (currentBool === true) {
+      count = count + 1
+    }
+  }
+  return count
+}
+
+
+
+//___________________________________________________________________//
+//___________________________________________________________________//
+const makeFriendly = function (paragraph) {
+  result = ''
+  for (character of paragraph) {
+    if (character !== ".") {
+      result = result + character
+    }
+    if (character === '.'){
+      result = result + '!'
+    }
+  }
+  return result
+}
+
+
+
+//___________________________________________________________________//
+//___________________________________________________________________//
+const cubeAll = function (arr) {
+  const cubedNumbers = []
+  for (eachNumber of arr) {
+    cubedNumbers.push(eachNumber ** 3)
+  }
+  return cubedNumbers;
+}
+
+
+
+//___________________________________________________________________//
+//___________________________________________________________________//
+const dogs = [
+  'Fido',
+  'Rolph',
+  'Maisie',
+];
+
+const cats = [
+  'Garfield',
+  'Heathcliff',
+]
+
+const dinos = [
+  'Barnie',
+  'Sharp Tooth',
+]
+
+
+const addNoises = function(animals){
+  for (animal of animals){
+    if (dogs.includes(animal)){
+      return animal + 'says woof';
+    }
+    if (cats.includes(animal)) {
+      return 'says "Meow!"'
+    }
+    if (dinos.includes(animal){
+      says
+    })
+    
+  }
+  
 
 
 
@@ -124,7 +225,7 @@ describe('makeFriendly', () => {
   it(`given a paragraph, returns a paragraph where each sentence ends with an exclamation point instead of the period it held before.`, () => {
     const paragraph1 = `Do you see the story. Do you see anything. It seems to me I am trying to tell you a dream.`;
     const paragraph2 = `Like a running blaze on a plain, like a flash of lightning in the clouds. We live in the flicker.`;
-      const paragraph3 = `What is that feeling when you’re driving away from people and they recede on the plain till you see their specks dispersing. It’s the too-huge world vaulting us, and it’s good-bye. But we lean forward to the next crazy venture beneath the skies. Nothing behind me, everything ahead of me, as is ever so on the road.`;
+    const paragraph3 = `What is that feeling when you’re driving away from people and they recede on the plain till you see their specks dispersing. It’s the too-huge world vaulting us, and it’s good-bye. But we lean forward to the next crazy venture beneath the skies. Nothing behind me, everything ahead of me, as is ever so on the road.`;
 
     const friendly1 = `Do you see the story! Do you see anything! It seems to me I am trying to tell you a dream!`;
     const friendly2 = `Like a running blaze on a plain, like a flash of lightning in the clouds! We live in the flicker!`;
@@ -170,7 +271,7 @@ describe('cubeAll', () => {
 })
 
 describe('addNoises', () => {
-    it('adds the appropriate noises for each animal in the given array', () => {
+  it('adds the appropriate noises for each animal in the given array', () => {
     const dogs = [
       'Fido',
       'Rolph',
