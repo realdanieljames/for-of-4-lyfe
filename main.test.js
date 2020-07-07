@@ -74,37 +74,23 @@ const cubeAll = function (arr) {
 
 //___________________________________________________________________//
 //___________________________________________________________________//
-const dogs = [
-  'Fido',
-  'Rolph',
-  'Maisie',
-];
+const addNoises =  function(animals){
+  const animalsWithNoises = [];
 
-const cats = [
-  'Garfield',
-  'Heathcliff',
-]
+  for(const animal of animals){
+    if(animal === 'Fido' || animal === 'Rolph' || animal === 'Maisie'){
+      animalsWithNoises.push(`${animal} says "Woof!"`);}
 
-const dinos = [
-  'Barnie',
-  'Sharp Tooth',
-]
+      else if (animal === 'Garfield' || animal === 'Heathcliff'){
+        animalsWithNoises.push(`${animal} says "Meow!"`)}
 
-
-const addNoises = function(animals){
-  for (animal of animals){
-    if (dogs.includes(animal)){
-      return animal + 'says woof';
+      else if (animal === 'Barnie' || animal === 'Sharp Tooth'){
+        animalsWithNoises.push(`${animal} says "ROWR."`)
+      }
+      }
+      return animalsWithNoises;
     }
-    if (cats.includes(animal)) {
-      return 'says "Meow!"'
-    }
-    if (dinos.includes(animal){
-      says
-    })
-    
-  }
-  
+
 
 
 
